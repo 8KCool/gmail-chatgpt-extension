@@ -1,10 +1,5 @@
-chrome.runtime.onInstalled.addListener(function () {
-    chrome.runtime.openOptionsPage();
-});
 
-
-chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
-  if (message.type === 'openOptionsPage') {
-    chrome.runtime.openOptionsPage();
-  }
+chrome.action.onClicked.addListener((tab) => {
+  // Handle the click event here
+  chrome.tabs.sendMessage(tab.id, {action: "iconClicked"});
 });

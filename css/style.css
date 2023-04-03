@@ -1,0 +1,86 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    min-width: 400px;
+    z-index: 10000;
+    border-radius: 10px;
+  }
+  
+  .modal h2 {
+    margin-top: 0;
+  }
+  
+  #modal-close {
+    padding: 10px 20px;
+    background-color: darkgray;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  #gpt_generate {
+    padding: 10px 20px;
+    background-color: rgb(20, 174, 245);
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+.modal-header {
+    font-weight: 500;
+    font-size: 20px;
+    /* line-height: 28px; */
+    color: rgba(82,93,113,var(--tw-text-opacity));
+    padding: 10px 0px;
+    border-bottom: 1px solid lightgray;
+}
+
+.modal-header #title {
+    margin: 0px !important;
+}
+  
+.modal .modal-content {
+    padding: 20px 0px;
+}
+
+.modal .modal-content .content-title{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: rgba(82,93,113,var(--tw-text-opacity));
+    margin: 5px !important;
+}
+
+.modal .modal-content .sender-email-box {
+    min-width: 800px;
+    padding: 5px;
+    background-color: lightgray;
+    border: 1px solid gray;
+    border-radius: 5px;
+    height: 250px;
+    overflow-y: auto;
+}
+
+.modal .modal-content .edit-email-box {
+    min-width: 800px;
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    height: 100px;
+    overflow-y: auto;
+    font-size: small;
+}

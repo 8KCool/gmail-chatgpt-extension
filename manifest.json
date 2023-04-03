@@ -1,6 +1,6 @@
 {
     "manifest_version": 3,
-    "name": "GPTMail",
+    "name": "LuxenGPT",
     "version": "1.0",
     "description": "An extension that allows you to read and reply to Gmail messages using chat GPT",
     "icons": {
@@ -16,7 +16,8 @@
             ],
             "js": [
                 "gmail.js"
-            ]
+            ],
+            "css": ["css/style.css"]
         }
     ],
     "host_permissions": [
@@ -33,13 +34,15 @@
             "16": "icons/16.png",
             "32": "icons/32.png"
         },
-        "default_title": "My Gmail Extension"
+        "default_title": "LuxenGPT"
     },
     "options_ui": {
         "page": "index.html",
         "open_in_tab": true
     },
     "permissions": [
-        "storage","tabs"
+        "storage",
+        "tabs",
+        "activeTab"
     ]
 }
